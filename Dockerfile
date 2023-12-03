@@ -12,4 +12,5 @@ COPY ./src /php/src/
 WORKDIR /php/src/
 
 # PHP 내장 서버를 시작합니다.
+# Docker 컨테이너의 80포트를 활성화 합니다.
 CMD [ "php", "-S", "0.0.0.0:80" ]
